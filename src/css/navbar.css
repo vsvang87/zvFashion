@@ -1,0 +1,32 @@
+.navbar-container {
+  background: rgb(39, 39, 105);
+  padding: 1rem 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(80%, 90rem);
+  margin-inline: auto;
+}
+.navbar a.active {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5rem;
+}
+.logo-container h2 .logo-link {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links li {
+  list-style-type: none;
+  padding: 0 1rem;
+}
+.nav-links li .links {
+  text-decoration: none;
+  color: #fff;
+}

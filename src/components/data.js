@@ -1,0 +1,67 @@
+export default {
+  products: [
+    {
+      id: 1,
+      name: "Coffee Cup",
+      price: 5,
+      description: "Family coffee cup",
+      image: "../image/acessory_cup.jpg",
+    },
+    {
+      id: 2,
+      name: "Shirt",
+      price: 20,
+      description: "Customize name shirt",
+      image: "../image/boy-shirt-name.jpg",
+    },
+    {
+      id: 3,
+      name: "Gray Shirt",
+      price: 15,
+      description: "Jesus Shirt",
+      image: "../image/JesusGrayShirt.jpg",
+    },
+    {
+      id: 4,
+      name: "Gray Hoodie",
+      price: 30,
+      description: "Autism",
+      image: "../image/hoodie_autism.jpg",
+    },
+    {
+      id: 5,
+      name: "Navy Shirt",
+      price: 20,
+      description: "Customize name shirt",
+      image: "../image/navyblueshirt.jpg",
+    },
+    {
+      id: 6,
+      name: "Shirt",
+      price: 20,
+      description: "Proverbs",
+      image: "../image/proverbpeachcolorshirt.jpg",
+    },
+    {
+      id: 7,
+      name: "V-Neck Shirt",
+      price: 20,
+      description: "Jesus Cross",
+      image: "../image/pinkv-neckshirt.jpg",
+    },
+    {
+      id: 8,
+      name: "Gray V-Neck Shirt",
+      price: 20,
+      description: "She is strong",
+      image: "../image/shisstronggrayshirt.jpg",
+    },
+    {
+      id: 9,
+      name: "Women Shirt",
+      price: 25,
+      description: "Hmong Women",
+      image: "../image/woman-shirt-logo.jpg",
+    },
+  ],
+};
