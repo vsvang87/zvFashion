@@ -20,22 +20,22 @@ function Cart({ removeItem, cartItems, addToCart }) {
                 <img src={item.image} alt="" className="cart-item-image" />
                 <p>{item.name}</p>
 
-                <div className="cart-button-container">
+                <div className="cart-button-container col">
                   <button
                     onClick={() => addToCart(item)}
-                    className="increase-button"
+                    className="increase-button btn"
                   >
                     +
                   </button>
                   {item.quantity}
                   <button
                     onClick={() => removeItem(item)}
-                    className="decrease-button"
+                    className="decrease-button btn"
                   >
                     -
                   </button>
                 </div>
-                <div>$ {item.price}</div>
+                <div col>$ {item.price}</div>
               </div>
             ))}
             <div className="cart-items-total">Total Price: $ {totalPrice}</div>

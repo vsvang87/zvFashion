@@ -18,12 +18,7 @@ function Navbar({ cartItems }) {
         <ul className="nav-links">
           <li>
             <NavLink to="/" className="links">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="links">
-              Contact
+              Products
             </NavLink>
           </li>
           <li>
@@ -31,6 +26,12 @@ function Navbar({ cartItems }) {
               Hmong Clothes
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/contact" className="links">
+              Contact
+            </NavLink>
+          </li>
+
           <li>
             <NavLink to="/cart" className="links">
               <FontAwesomeIcon icon={faShoppingCart} />

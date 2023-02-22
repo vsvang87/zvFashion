@@ -7,10 +7,12 @@ import HmongClothes from "./components/HmongClothes";
 import { Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart";
 import data from "./components/data.js";
+import hmongClothesData from "./components/hmongClothesData.js";
 
 //
 function App() {
   const { products } = data;
+  const { hmongClothes } = hmongClothesData;
   const [cartItems, setCartItems] = useState([]);
   //add to item to cart
   const addToCart = (product) => {
@@ -54,7 +56,10 @@ function App() {
           element={<Home products={products} addToCart={addToCart} />}
         ></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/hmongclothes" element={<HmongClothes />}></Route>
+        <Route
+          path="/hmongclothes"
+          element={<HmongClothes hmongClothes={hmongClothes} />}
+        ></Route>
         <Route
           path="/cart"
           element={

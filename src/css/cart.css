@@ -16,3 +16,12 @@
   padding-top: 1rem;
   text-align: right;
 }
+.btn {
+  border: none;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  color: #fff;
+  background: rgb(231, 202, 34);
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
