@@ -1,3 +1,10 @@
+:root {
+  --clr-blue: rgb(219, 239, 255);
+  --clr-offblack: rgb(31, 31, 31);
+  --clr-green: rgb(234, 255, 234);
+  --clr-yellow: rgb(255, 255, 218);
+}
+
 body {
   padding: 0;
   margin: 0;

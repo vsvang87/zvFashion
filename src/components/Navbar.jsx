@@ -8,13 +8,6 @@ function Navbar({ cartItems }) {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <div className="logo-container">
-          <h2>
-            <Link to="/" className="logo-link">
-              Z.V Fashions
-            </Link>
-          </h2>
-        </div>
         <ul className="nav-links">
           <li>
             <NavLink to="/" className="links">
@@ -27,20 +20,30 @@ function Navbar({ cartItems }) {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="links">
-              Contact
-            </NavLink>
-          </li>
-
-          <li>
             <NavLink to="/cart" className="links">
-              <FontAwesomeIcon icon={faShoppingCart} />
+              <FontAwesomeIcon icon={faShoppingCart} className="cart" />
               <span className="cart-quantity">
                 {cartItems.length === 0 ? "0" : cartItems.length}
               </span>
             </NavLink>
           </li>
         </ul>
+        <div className="logo-container">
+          <h2>
+            <Link to="/" className="logo-link">
+              Z.V Fashions
+            </Link>
+          </h2>
+        </div>
+        <div className="sign-up-container">
+          <ul>
+            <li>
+              <NavLink to="/contact" className="links">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   );

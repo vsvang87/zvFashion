@@ -25,3 +25,16 @@
   font-size: 1.2rem;
   margin: 0 0.5rem;
 }
+.check-out {
+  padding-top: 1.5rem;
+  text-align: right;
+}
+.check-out .checkout-button {
+  text-decoration: none;
+  color: black;
+  background: rgb(231, 202, 34);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+}

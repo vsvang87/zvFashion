@@ -1,7 +1,10 @@
-.navbar-container {
-  background: rgb(39, 39, 105);
-  padding: 1rem 0;
+:root {
+  --clr-blue: rgb(219, 239, 255);
+  --clr-offblack: rgb(31, 31, 31);
+  --clr-green: rgb(223, 255, 223);
+  --clr-yellow: rgb(255, 255, 218);
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -10,23 +13,45 @@
   margin-inline: auto;
 }
 .navbar a.active {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--clr-offblack);
   padding-bottom: 0.5rem;
 }
 .logo-container h2 .logo-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--clr-offblack);
+  font-family: "Courgette", cursive;
+  letter-spacing: 0.1rem;
 }
 .nav-links {
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.nav-links .cart {
+  color: var(--clr-offblack);
+  padding-right: 0.2rem;
+}
 .nav-links li {
   list-style-type: none;
-  padding: 0 1rem;
+  padding-right: 1rem;
 }
 .nav-links li .links {
   text-decoration: none;
-  color: #fff;
+  color: var(--clr-offblack);
+  font-weight: bold;
+}
+.sign-up-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-up-container ul li {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+.sign-up-container ul li a {
+  text-decoration: none;
+  color: var(--clr-offblack);
+  font-weight: bold;
 }

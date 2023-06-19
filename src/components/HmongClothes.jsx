@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/hmongClothes.css";
 
-function HmongClothes({ hmongClothes }) {
+function HmongClothes({ hmongClothes, addToCart }) {
   return (
     <div className="hmong-clothes-component">
       <div className="wrapper">

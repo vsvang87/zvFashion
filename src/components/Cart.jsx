@@ -10,7 +10,7 @@ function Cart({ removeItem, cartItems, addToCart }) {
     <div className="cart-component-container">
       <div className="wrapper">
         <div className="cart-content">
-          <h1>Cart</h1>
+          <h1>Items</h1>
           {cartItems.length === 0 && (
             <div className="cart-items-empty">Cart is empty</div>
           )}
@@ -39,6 +39,11 @@ function Cart({ removeItem, cartItems, addToCart }) {
               </div>
             ))}
             <div className="cart-items-total">Total Price: $ {totalPrice}</div>
+            <div className="check-out">
+              <a href="#" className="checkout-button">
+                Check Out
+              </a>
+            </div>
           </div>
         </div>
       </div>

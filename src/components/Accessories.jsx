@@ -1,31 +1,12 @@
 import React from "react";
-import "../css/home.css";
 
-function Home({ products, addToCart }) {
+function Accessories() {
   return (
-    <div className="home-container">
-      <div className="hero-container">
-        <div className="wrapper">
-          <div className="hero-content">
-            <div className="hero-inner">
-              <p>
-                Come check us out <i class="fa-solid fa-fire"></i>
-              </p>
-              <h1 className="hero-message">
-                We personalized shirts, hoodies, mugs, and many more.
-              </h1>
-              <p>
-                Find out how much it is to personalize a shirt or hoody of your
-                choice.
-              </p>
-              <button className="quote-btn">
-                Quote <i class="fa-solid fa-tag"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="accessory-container">
       <div className="wrapper">
+        <div className="title-container">
+          <h1>Accessories</h1>
+        </div>
         <div className="home-product-content">
           {products.map((item) => {
             return (
@@ -53,4 +34,4 @@ function Home({ products, addToCart }) {
   );
 }
 
-export default Home;
+export default Accessories;

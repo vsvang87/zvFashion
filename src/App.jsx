@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
+
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import HmongClothes from "./components/HmongClothes";
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart";
 import data from "./components/data.js";
@@ -58,7 +60,9 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route
           path="/hmongclothes"
-          element={<HmongClothes hmongClothes={hmongClothes} />}
+          element={
+            <HmongClothes hmongClothes={hmongClothes} addToCart={addToCart} />
+          }
         ></Route>
         <Route
           path="/cart"
@@ -71,6 +75,7 @@ function App() {
           }
         ></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
